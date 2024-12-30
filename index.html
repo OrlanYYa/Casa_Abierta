@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="setupScreen" class="screen">
+        <h1>AIM Practice</h1>
+        <label for="playerName">Name:</label>
+        <input type="text" id="playerName" placeholder="Enter your name" required>
+        <label for="languageSelect">Language:</label>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+        <label for="durationSelect">Duration:</label>
+        <select id="durationSelect">
+            <option value="30">30 seconds</option>
+            <option value="60">60 seconds</option>
+            <option value="90">90 seconds</option>
+        </select>
+        <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <div id="gameScreen" class="screen hidden">
+        <header>
+            <h1 id="title">AIM Practice</h1>
+        </header>
+        <p id="instructions">Click on the circles as fast as you can.</p>
+        <div id="gameArea"></div>
+        <div id="gameInfo">
+            <p id="timerDisplay">Timer: 0</p>
+            <p id="score">Score: 0</p>
+            <p id="bestScore">Best: 0 (Player: -)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
