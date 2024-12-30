@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Screen Styles */
+.screen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Game Styles */
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+/* Button Styles */
+button {
+    background-color: #00ff00;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+/* Circle Styles */
+.circle {
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.1s;
+    width: 50px;
+    height: 50px;
+}
+
+.circle:active {
+    transform: scale(0.9);
+}
+
+.circle.clicked {
+    background-color: #00ff00;
+}
+
+/* Game Area Styles */
+#gameArea {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 60vh;
+    border: 1px solid #00ff00;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.timer {
+    font-size: 24px;
+    margin: 10px;
+}
+
+#gameScreen header {
+    display: flex;
+    justify-content: center; /* Center the title */
+    width: 100%;
+    max-width: 600px;
+}
+
+#gameScreen p {
+    margin: 5px 0;
+}
+
+#gameInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+}
